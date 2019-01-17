@@ -14,10 +14,13 @@
           <li class="dropdown component-holder" data-component="crn-menu-item" cronapp-security="visible : Administrators"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-users fa-lg"></i> <span>{{"Home.view.Admin" | translate}}</span> <span class="caret"></span> </a>
             <ul class="dropdown-menu">
               <li><a href="#/home/admin/user" class="component-holder" data-component="crn-anchor">{{"Home.view.Users" | translate}}</a></li>
-            </ul> </li><li class="dropdown component-holder open" data-component="crn-menu-item" cronapp-security="visible : Administrators"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-users fa-lg"></i> <span>Relatórios</span> <span class="caret"></span> </a>
+            </ul> </li><li class="dropdown component-holder" data-component="crn-menu-item" cronapp-security="visible : Administrators"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-users fa-lg"></i> <span>Relatórios</span> <span class="caret"></span> </a>
             <ul class="dropdown-menu">
               <li><a href="#/home/logged/Rel" class="component-holder" data-component="crn-anchor">Todos Alunos</a></li>
-            <li><a href="#" class="component-holder col-md-12" data-component="crn-anchor">Estados</a></li></ul> </li>
+            <li><a href="#" class="component-holder col-md-12" data-component="crn-anchor">Estados</a></li></ul> </li><li class="dropdown component-holder open" data-component="crn-menu-item" cronapp-security="visible : Administrators"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-users fa-lg"></i> <span>Alunos</span> <span class="caret"></span> </a>
+            <ul class="dropdown-menu">
+              <li><a href="#/home/logged/aluno" class="component-holder" data-component="crn-anchor">Alunos</a></li>
+            <li><a href="#/home/logged/endereco" class="component-holder col-md-12" data-component="crn-anchor">Endereço</a><a href="#/home/logged/formacao" class="component-holder col-md-12" data-component="crn-anchor">Formação</a><a href="#/home/logged/tipoformacao" class="component-holder col-md-12" data-component="crn-anchor">Tipo formação</a></li></ul> </li>
           <li class="dropdown component-holder navbar-right" data-component="crn-menu-item"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-lg fa-gear"></i> <span>{{"ChooseTheme" | translate}}</span> <span class="caret"></span> </a>
             <ul class="dropdown-menu">
               <li ng-repeat="theme in themes" ng-click="changeTheme(theme)"> <a href="javascript:void(0);" ng-class="{'bg-primary': myTheme==theme}">{{theme}} <i class="fa fa-lg fa-check pull-right" ng-if="myTheme==theme"></i></a></li>
